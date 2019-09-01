@@ -23,7 +23,7 @@ import java.io.IOException;
 public class ActionsJoueurPanel extends JPanel implements ActionListener {
 
     JButton finirTourButton;
-    File ImageFond = new File("Images/b.png");
+    File ImageFond = new File(getClass().getResource("/images/b.png").getPath());
     static Joueur joueurActif;
     static JButton achatUnitesButton;
     static JButton constrBatisseButton;

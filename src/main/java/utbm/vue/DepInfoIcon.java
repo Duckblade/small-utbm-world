@@ -4,9 +4,8 @@ import javax.swing.ImageIcon;
 
 
 public class DepInfoIcon extends ImageIcon{
-	//ImageIcon EDIMImageIcon = new ImageIcon("Images/personnages/dep_info.png");
-	public DepInfoIcon(){
-		super("Images/personnages/dep_info.png"); 
+	public static String filename = DepIMSIIcon.class.getResource("/images/personnages/dep_info.png").getPath();	public DepInfoIcon(){
+		super(filename);
 		//Faction.vectFactionsImages.add(0,this); 
 	}
 }

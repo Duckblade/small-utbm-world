@@ -4,8 +4,10 @@ import javax.swing.ImageIcon;
 
 
 public class DepEDIMIcon extends ImageIcon{
+	public static String filename = DepIMSIIcon.class.getResource("/images/personnages/dep_edim.png").getPath();
+
 	public DepEDIMIcon(){
-		super("Images/personnages/dep_edim.png"); 
+		super(filename);
 	}
 }
 

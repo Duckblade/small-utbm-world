@@ -24,10 +24,10 @@ import java.io.IOException;
 public class CasePanel extends JPanel implements MouseListener {
 
 	/** Fichier qui permet le chargement de l'image du terrain */
-	File ImageFond = new File("Images/QG.png");
-	File ImageBatisse = new File("Images/fort.png");
-	File ImageFondTerrain;
-	ImageIcon imageUnite = new ImageIcon("Images/personnages/dep_tc.png");
+	File ImageFond = new File(getClass().getResource("/images/QG.png").getPath());
+	File ImageBatisse = new File(getClass().getResource("/images/fort.png").getPath());
+	File ImageFondTerrain = new File(getClass().getResource("/images/amphi.png").getPath());
+	ImageIcon imageUnite = new ImageIcon(getClass().getResource("/images/personnages/dep_tc.png").getPath());
 
 	/** num�ro de la case */
 	int numCase;
@@ -85,16 +85,16 @@ public class CasePanel extends JPanel implements MouseListener {
 		plateauP = casee.getPlateau().getPlateauPanel();
 
 		if (casee.getNomCase() == "TD") {
-			ImageFondTerrain = new File("Images/TD.png");
+			ImageFondTerrain = new File(getClass().getResource("/images/TD.png").getPath());
 		}
 		if (casee.getNomCase() == "Amphi") {
-			ImageFondTerrain = new File("Images/Amphi.png");
+			ImageFondTerrain = new File(getClass().getResource("/images/Amphi.png").getPath());
 		}
 		if (casee.getNomCase() == "Beton") {
-			ImageFondTerrain = new File("Images/Beton.png");
+			ImageFondTerrain = new File(getClass().getResource("/images/Beton.png").getPath());
 		}
 		if (casee.getNomCase() == "Mur") {
-			ImageFondTerrain = new File("Images/Mur.png");
+			ImageFondTerrain = new File(getClass().getResource("/images/Mur.png").getPath());
 		}
 
 		instancierDeplacementUnitesFrame = false;
